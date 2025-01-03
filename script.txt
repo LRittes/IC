@@ -1,0 +1,105 @@
+slide 1
+Boa tarde a todos, me chamo leandro, sou aluno da graduação de ciencia da computação na universidade estadual de santa catarina e hoje irei apresentar a pesquisa realizada com apoio do meu orientador Prof Adriano Fiorese sobre seleção, pontuação e ranqueamento de provedores serverless utilizando métodos de decisão multicritério.
+
+slide 2
+Aqui são os tópicos que passarei durante a apresentação.
+
+slide 4
+Bom, nossa pesquisa está relacionada a área de infraestrutura, pelo fato de que a parte de infra de uma empresa costuma ser onde se concentra o grande gasto da mesma, e ter meios de poder minimizar esses gastos é imprecendivel, logo antes de uma empresa montar sua infraestrutura é preciso ter algumas informações cruciais, como por exemplo, 
+Qual a quantidade de servidores são necessários para o funcionamento da operação
+Quais as tecnologias empregadas nesses servidores
+Quantidade de mão de obra qualificada para manusear esses servidores 
+E o custo de toda essa operação, tanto para deixar esses servidores operacionais no dia a dia, quanto para dar manutenção.
+E todo esse custo pode ser inviavel para grande parte das empresas e por isso surgiu a alguns anos o conceito de serverless
+
+slide 5
+E porque essa abordagem é vantajoso?
+Provedores serverless oferecem escalabilidade automática, o que significa que a infraestrutura se ajusta automaticamente à carga de trabalho.
+
+Em um modelo serverless, você paga apenas pelo que utiliza, ou seja, pelos recursos computacionais consumidos durante a execução do seu código. 
+
+O gerenciamento da infraestrutura, incluindo servidores, balanceadores de carga e armazenamento, é feito pelo provedor serverless.
+
+A arquitetura serverless facilita a implementação de novas funcionalidades e serviços de forma rápida e eficiente. 
+
+slide 19
+Com base nisso, o problema que esse trabalho tenta resolver é encontrar o provedor serverless mais adequado para o usuário com base nas especificações do usuário e caracteristicas de cada servidor.
+Fazendo assim com que o usuário obtenha o provedor que una todas caracteriscas nescessarias para seu software e tenha o melhor custo beneficio 
+
+slide 20
+Essas são as etapas para o desenvolvimento do nosso método que são coleta de dados, escolha do método, implementação do método e os testes de código
+
+slide 21
+A coleta de dado foi feita diretamente nos sites oficiais dos provedores serveles, como amazon, microsoft, google, além de relatórios de benchmark desses provedores.
+Os dados são armazenados da seguinte forma, a primeira coluna é a descrição do dado, chamamos de PI por serem conhecidas com Performance indicator ou indicadores de performance; então temos aqui tempo de computação, memória, cold start e tempo de execução, nesse exemplo listei algumas para exemplificação mas ao total usamos 11, que estão listados aqui em baixo.
+Na segunda coluna são os tipo, nele é indicado se os valores para aquela PI são boas em quais situações, como por exemplo, se eu for querer comprar um computador de 4G de RAM mas na loga só há de 8G esse valor é um HB ou High Better, quer dizer q quanto maior for esse valor, melhor. 
+O low better é o inverso, como por exemplo, se quero comprar um computador de 2000 e chego na loja e o computador está por 1500 então é algo positivo, quanto menor o valor melhor.
+E NB é natural better, ou seja o valor daquele indicador só é bom se for o valor exato, nem maior nem menor. 
+A requisição são as nescessidades que o usuário precisa que seja satisfeita pelos provedores.
+Ali é listado todas as PIs e quais valores precisam ser satisfeitos pelos provedores além de qual grau de importancia esse indicador é para a escolha do provedor, como podemos ver memória é peso 1 logo não tem tanta importancia assim porem tempo de execução tem peso 8 e logo esse indicador é um dos mais importantes na hora da escolha do provedor.
+
+slide 25
+Bom o motivo, Escolhemos os métodos de decisão multicritério pelo fato de ser métodos deterministicos, e não só isso mas como nosso problema de escolha envolve multiplas variaveis em cenário complexo para decisão então usar um método que leva em comparação multicritério seria a escolha ideal. 
+
+slide 29
+Estruturação hierarquica, O AHP permite a estruturação do problema em uma hierarquia de critérios e subcritérios, o que facilita a compreensão e a análise do problema de decisão.
+Flexibilidade, O AHP pode ser aplicado a uma vasta gama de problemas de decisão, desde escolhas simples até questões complexas com múltiplos níveis de critérios e subcritérios.
+Analise de sensibilidade, O AHP facilita a realização de análises de sensibilidade para avaliar como mudanças nos pesos dos critérios podem afetar a decisão final, ajudando a entender a robustez da solução.
+
+slide 30
+Só para contextualizar, em programação uma biblioteca nada mais é uma caixa de ferramentas, onde se tem tudo que precisa para um determinado trabalho, no nosso caso iremos usar uma biblioteca de tomada de dicisão, nela há dezenas de métodos multicritério
+
+slide 33
+O nosso trabalho consiste em implementar a nossa variante do método AHP e confrontar e comparar com o método da biblioteca PyDecision 
+
+slide 35
+Há 2 tipos de teste, os testes de confiabilidade e testes gerais, Os testes de confiabilidade são para garantir que ambos os códigos conseguem alcançar 100% de acurácia em cenários onde nós ja sabemos quais são os melhores provedores dado uma requisição que nós mesmos criamos
+Os testes gerais são para medir o desempenho do nosso método de ahp em comparação com o ahp da biblioteca.
+ 
+slide 36
+Para o teste de confiabilidade foi criado 6 requisições, onde escolhemos 4 PI's com pesos máximos, no caso 9, e o restante das pis com pesos minimos no caso 1.
+
+slide 37
+Em cada requisição foi criado 5 provedores ficticios onde seus valores foram determinados com base nas PI's da requisição, todos tem os mesmos valores para as PI's com valores minimos, mas as PI's com valores máximo foi distribuido da seguinte forma, o provedor que é para ser o 1º no rank recebe as 4 PI's com valores máximo, o provedor que é para ser o 2º melhor fica com 3 das 4 melhores PI's e os provedores subsequentes vão perdendo 1 das melhores PI's. 
+
+slide 38
+Então os passos do algoritmo fica da seguinte forma, é dado como input dos algoritmos a requisição com seus provedores e ao final é mostrado o rank com os provedores e seus respectivos pontos e dessa forma podemos averiguar se conseguiram alcançar 100% de acurácia ranqueando do melhor para o pior
+
+slide 39
+Para os testes gerais é criado requisições com valores do banco de dados mas sendo escolhidos aleatório, são criados 100 requisições dessa forma para os testes 
+
+slide 40
+Para cada requisição é criado um conjunto de provedores, onde cada conjunto é testado isoladamente e como na requisição os valores de cada provedor é escolhido no banco de dados aleatóriamente 
+
+slide 41
+Bom como é executado os testes, primeiro passamos o input, onde consiste de 1 requisição e 1 conjunto de provedores, é passado para o método AHP do PyDecision onde é construido o rank final 
+
+slide 42
+Como temos o rank da biblioteca vamos utilizar ela como parametro para a nossa implementação
+
+slide 43
+Para a execução do nosso método implementado passamos o mesmo input e ele resulta no nosso rank
+
+slide 44
+Com o nosso rank construido podemos avalia-lo 
+
+slide 45
+E para avalia-lo confrontamos ele com o rank da biblioteca para averiguar a sua acurácia, ou seja se o rank da nossa implementação obteve os mesmos valores da biblioteca 
+
+slide 46
+slide 47
+Nos testes de confiabilidade para as 6 requisições, tanto a nossa implementação como a biblioteca alcançaram 100% de acurácia
+
+slide 48
+Aqui já é o os testes gerais de precisão para todos os provedores, para os 100 testes para 5 provedores o nosso método conseguiu 100% de acurácia e para os demais ficaram entre 60 a 100% de acurácia, como podemos ver
+
+slide 49
+Para acurácia dos 3 primeiros provedores ele obteve 100% de acurácia em praticamente todos os testes, exceto por 1 teste dos 100 no de 500 provedores
+
+slide 50
+E analisando a média do tempo de execução para cada conjunto, podemos ver q apartir dos 500 provedores a nossa implementação obteve um melhor desempenho 
+
+slide 51
+Bom e nossas considerações finais são que para apartir de 500 provedores nossa implementação consiguiu obter um melhor desempenho.
+Ambos os algoritmos conseguiram obter 100% de acurácia nos testes de confiabilidade e o algoritmo ahp implementado obteve 100% de acurácia em testes para os 3 primeiros melhores provedores exceto por 1 teste de 100 de 500 provedores que obteve 66%
+

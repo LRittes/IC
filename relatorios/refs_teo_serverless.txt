@@ -1,0 +1,55 @@
+texto 1
+
+Serverless é um modelo de desenvolvimento nativo em nuvem para criação e execução de aplicações sem o gerenciamento de servidores.
+
+Os servidores ainda são usados nesse modelo, mas eles são abstraídos do desenvolvimento de aplicações. O provedor de nuvem fica responsável pelas tarefas rotineiras de provisionamento, manutenção e escala da infraestrutura do servidor. Os desenvolvedores só precisam empacotar o código em containers para fazer a implantação.
+
+Depois da implantação, as aplicações serverless atendem à demanda e aumentam ou diminuem a escala automaticamente de acordo com as necessidades. As soluções serverless dos provedores de nuvem pública costumam ser oferecidas sob demanda por meio de um modelo de execução orientado a eventos. Por isso, não há cobrança pelas funções serverless não utilizadas.
+
+texto 2
+
+Serverless é um modelo de desenvolvimento e execução de aplicativos da cloud computing que permite aos desenvolvedores construir e executar códigos de aplicativo sem fornecer ou gerenciar servidores ou infraestrutura de backend.
+
+O serverless permite que os desenvolvedores coloquem todo o seu foco em escrever o melhor código de aplicativo de front-end e lógica de negócios possível. Tudo que os desenvolvedores precisam fazer é escrever seu código do aplicativo e implementá-lo em contêineres gerenciados por um provedor de serviço de cloud. O provedor de cloud trata do resto, fornecendo a infraestrutura em cloud necessária para executar o código, e aumentando e diminuindo a capacidade da infraestrutura sob demanda, conforme necessário. O provedor de cloud também é responsável por todo o gerenciamento e a manutenção de rotina da infraestrutura, como atualizações do sistema operacional e correções, gerenciamento de segurança, planejamento de capacidade, monitoramento do sistema e muito mais.
+Com o serverless, os desenvolvedores nunca pagam por capacidade inativa. O provedor de cloud gera e fornece os recursos de computação necessários sob demanda quando o código é executado e os remove novamente, chamado de "ajustando a escala até zero", quando a execução é interrompida. A faturamento começa no início da execução e termina quando a execução é interrompida. Geralmente, a precificação é baseada no tempo de execução e nos recursos necessários.
+Apesar do nome, existem definitivamente servidores na serverless computing. "Serverless" descreve a experiência do desenvolvedor com esses servidores. Eles são invisíveis para o desenvolvedor, que não os vê, não os gerencia, nem interage com eles de alguma forma.
+Hoje, todos os principais provedores de serviço de cloud oferecem uma plataforma serverless, incluindo Amazon Web Services (AWS Lambda), Microsoft Azure (Azure Functions), Google Cloud (Google Cloud Functions) e IBM Cloud (IBM Cloud Code Engine). Juntos, a serverless computing, os microsserviços e os contêineres formam um triunvirato de tecnologias normalmente consideradas como pertencentes ao núcleo de desenvolvimento de aplicativos nativos de cloud.
+
+texto 3
+
+Computação com tecnologia sem servidor é um modelo de desenvolvimento de aplicações em que você pode criar e implantar aplicações em uma infraestrutura de servidores gerenciados de terceiros. Todas as aplicações exigem servidores para serem executadas. Porém, no modelo de tecnologia sem servidor, um provedor de nuvem gerencia o trabalho rotineiro e provisiona, escala e mantém a infraestrutura subjacente. O provedor de nuvem lida com várias tarefas, como gerenciamento do sistema operacional, patches de segurança, gerenciamento do sistema de arquivos e da capacidade, balanceamento de carga, monitoramento e registro em log. Como resultado, seus desenvolvedores podem se concentrar no design de aplicações e ainda receber os benefícios de uma infraestrutura de servidor econômica, eficiente e altamente escalável.
+Nos primórdios da internet, qualquer pessoa que quisesse executar um aplicativo web tinha que comprar e manter servidores físicos. As empresas normalmente armazenavam seus dispositivos de servidor físico em datacenters on-premises ou instalações de colocalização. Poderia ser caro, pois a maioria dos aplicativos usava apenas uma fração muito pequena dos recursos de hardware do servidor.
+
+O modelo de computação em nuvem resolveu inicialmente esse problema ao permitir que os clientes criassem servidores ou instâncias virtuais no hardware do provedor de nuvem. No entanto, os clientes ainda precisavam provisionar, configurar, atualizar e escalar seus servidores virtuais.
+
+Em resposta a esses problemas, os provedores de nuvem começaram a oferecer tecnologias sem servidor para aumentar a agilidade e otimizar ainda mais os custos. Com a computação sem servidor, seus desenvolvedores podem executar código, gerenciar dados e integrar aplicações sem se preocupar com as tarefas de gerenciamento de infraestrutura.
+
+Há vários benefícios na adoção da tecnologia sem servidor, que descreveremos a seguir.
+
+Aumento na produtividade do desenvolvedor
+Suas equipes de desenvolvimento podem se concentrar na criação de aplicações em vez de configurá-las. Despesas operacionais mais baixas significam que seus aplicativos chegam ao mercado mais rapidamente. Seus desenvolvedores podem responder ao feedback dos clientes e lançar alterações no código da aplicação com frequência.
+
+Escalabilidade eficiente
+Os fornecedores de nuvem fornecem um atributo de ajuste de escala automático em seus ambientes sem servidor. Suas aplicações sem servidor escalam automaticamente de zero até o pico de demanda. Seus desenvolvedores não precisam pensar no uso ao escrever código.
+
+Custos reduzidos
+Você paga apenas pela CPU, memória e outros recursos de computação necessários quando seu código é executado. Você não paga nada por recursos ociosos. Esse modelo de cobrança de pagamento por valor garante a utilização ideal dos recursos e nenhum desperdício com o provisionamento excessivo.
+Há muitas aplicações e sistemas em que a computação sem servidor pode ser útil.
+
+Desenvolvimento de aplicações sem estado
+A arquitetura sem servidor é ideal para aplicações assíncronas e sem estado que não salvam dados do cliente entre as sessões. Exemplos de aplicações sem servidor incluem chatbots, agendadores de tarefas e aplicações de IoT. Por exemplo, a Coca-Cola usou a AWS para desenvolver um aplicativo móvel para servir e usá-lo em seu dispensador de bebidas sem toque em apenas 100 dias. A Coca-Cola usou componentes básicos sem servidor, como o AWS Lambda.
+
+Processamento em lotes
+As aplicações de processamento em lotes concluem periodicamente trabalhos de dados repetitivos e de alto volume, como backups, filtragem e classificação. O processamento em lotes é adequado para ambientes sem servidor que escalam massivamente quando necessário e não custam nada quando não são usados.
+
+Por exemplo, a Liberty Mutual usou a AWS para consolidar suas diferentes linhas globais de negócios em um sistema centralizado chamado Financial Central Services (FCS). Ela usou o AWS Step Functions para criar uma aplicação sem servidor que pode processar 100 milhões de transações em uma única execução no final de cada mês.
+
+Análise de dados em tempo real
+A computação sem servidor é ideal para mecanismos de streaming em tempo real para melhorar a capacidade de resposta do cliente. Os aplicativos sem servidor podem lidar com grandes quantidades de dados de streaming de centenas de milhares de fontes enquanto experimentam baixa latência e alta largura de banda. Como resultado, você pode obter insights em segundos, em vez de minutos.
+
+Por exemplo, a Genentech usa a funcionalidade sem servidor da AWS para análise de dados clínicos. Agora, os pesquisadores podem concluir, em algumas horas, tarefas que antes levariam semanas para serem executadas.
+
+Automação de processos de negócios
+Você pode usar a abordagem sem servidor para automatizar processos de negócios que são entediantes e demorados. Seus desenvolvedores podem se concentrar em traduzir a lógica de negócios em código de aplicativo sem gerenciar servidores.
+
+Por exemplo, a Taco Bell usou a AWS para criar aplicações sem servidor para realizar transformações de dados e lógica de negócios. Eles forneceram informações em tempo real sobre menus e restaurantes aos parceiros de entrega da Taco Bell. Os investimentos em tecnologia sem servidor ajudaram a marca a mudar rapidamente para atender à demanda do consumidor por entrega durante a pandemia de COVID-19.

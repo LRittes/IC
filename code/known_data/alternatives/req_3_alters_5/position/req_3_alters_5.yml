@@ -1,0 +1,96 @@
+alternatives:
+- company: company0
+  criterions:
+    1GB/segundo +Pos: 0
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 0
+    ConcurrencyPos: 1
+    Execution TimePos: 0
+    MemoryPos:
+    - 128
+    - 384
+    - 640
+    - 1024
+    - 1152
+    - 1664
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 1
+    tempo de computacao freePos: 0
+- company: company1
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 0
+    ConcurrencyPos: 1
+    Execution TimePos: 0
+    MemoryPos:
+    - 128
+    - 384
+    - 640
+    - 1024
+    - 1152
+    - 1664
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 1
+    tempo de computacao freePos: 0
+- company: company2
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 0
+    ConcurrencyPos: 1
+    Execution TimePos: 0
+    MemoryPos:
+    - 128
+    - 384
+    - 640
+    - 1024
+    - 1152
+    - 1664
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 0
+    tempo de computacao freePos: 0
+- company: company3
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 0
+    ConcurrencyPos: 0
+    Execution TimePos: 0
+    MemoryPos:
+    - 128
+    - 384
+    - 640
+    - 1024
+    - 1152
+    - 1664
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 0
+    tempo de computacao freePos: 0
+- company: company4
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 1
+    Cold StartsPos: 0
+    ConcurrencyPos: 0
+    Execution TimePos: 0
+    MemoryPos:
+    - 128
+    - 384
+    - 640
+    - 1024
+    - 1152
+    - 1664
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 0
+    tempo de computacao freePos: 0

@@ -1,0 +1,211 @@
+requisitions:
+  id_1:
+    criterions:
+      1GB/segundo +:
+        peso: 9
+        valor: 0.0000025
+      1M+ requisicao:
+        peso: 9
+        valor: 0.2
+      Arredondamento da duracao:
+        peso: 9
+        valor: 1
+      Cold Starts:
+        peso: 9
+        valor: 1
+      Concurrency:
+        peso: 1
+        valor: 1001
+      Execution Time:
+        peso: 1
+        valor: 5
+      Memory:
+        peso: 1
+        valor: 128
+      Requisicao free/mes:
+        peso: 1
+        valor: 1000000
+      Scalability:
+        peso: 1
+        valor: 1
+      funcoes max:
+        peso: 1
+        valor: 1001
+      tempo de computacao free:
+        peso: 1
+        valor: 400000
+  id_2:
+    criterions:
+      1GB/segundo +:
+        peso: 1
+        valor: 1.6e-05
+      1M+ requisicao:
+        peso: 1
+        valor: 0.2
+      Arredondamento da duracao:
+        peso: 1
+        valor: 1
+      Cold Starts:
+        peso: 9
+        valor: 1
+      Concurrency:
+        peso: 1
+        valor: 1001
+      Execution Time:
+        peso: 9
+        valor: 5
+      Memory:
+        peso: 9
+        valor: 128
+      Requisicao free/mes:
+        peso: 9
+        valor: 2000000
+      Scalability:
+        peso: 1
+        valor: 1
+      funcoes max:
+        peso: 1
+        valor: 1001
+      tempo de computacao free:
+        peso: 1
+        valor: 400000
+  id_3:
+    criterions:
+      1GB/segundo +:
+        peso: 9
+        valor: 0.0000025
+      1M+ requisicao:
+        peso: 1
+        valor: 0.2
+      Arredondamento da duracao:
+        peso: 9
+        valor: 1
+      Cold Starts:
+        peso: 1
+        valor: 1
+      Concurrency:
+        peso: 9
+        valor: 1001
+      Execution Time:
+        peso: 1
+        valor: 5
+      Memory:
+        peso: 1
+        valor: 128
+      Requisicao free/mes:
+        peso: 1
+        valor: 1000000
+      Scalability:
+        peso: 1
+        valor: 1
+      funcoes max:
+        peso: 9
+        valor: 1001
+      tempo de computacao free:
+        peso: 1
+        valor: 400000
+  id_4:
+    criterions:
+      1GB/segundo +:
+        peso: 9
+        valor: 1.6e-05
+      1M+ requisicao:
+        peso: 1
+        valor: 0.2
+      Arredondamento da duracao:
+        peso: 9
+        valor: 1
+      Cold Starts:
+        peso: 1
+        valor: 1
+      Concurrency:
+        peso: 1
+        valor: 1001
+      Execution Time:
+        peso: 1
+        valor: 5
+      Memory:
+        peso: 9
+        valor: 128
+      Requisicao free/mes:
+        peso: 9
+        valor: 1000000
+      Scalability:
+        peso: 1
+        valor: 1
+      funcoes max:
+        peso: 1
+        valor: 1001
+      tempo de computacao free:
+        peso: 1
+        valor: 400000
+  id_5:
+    criterions:
+      1GB/segundo +:
+        peso: 9
+        valor: 0.0000025
+      1M+ requisicao:
+        peso: 1
+        valor: 0.2
+      Arredondamento da duracao:
+        peso: 1
+        valor: 1
+      Cold Starts:
+        peso: 7
+        valor: 1
+      Concurrency:
+        peso: 1
+        valor: 1001
+      Execution Time:
+        peso: 3
+        valor: 5
+      Memory:
+        peso: 5
+        valor: 1664
+      Requisicao free/mes:
+        peso: 1
+        valor: 1000000
+      Scalability:
+        peso: 1
+        valor: 1
+      funcoes max:
+        peso: 1
+        valor: 1001
+      tempo de computacao free:
+        peso: 1
+        valor: 400000
+  id_6:
+    criterions:
+      1GB/segundo +:
+        peso: 9
+        valor: 0.0000025
+      1M+ requisicao:
+        peso: 1
+        valor: 0.2
+      Arredondamento da duracao:
+        peso: 1
+        valor: 1
+      Cold Starts:
+        peso: 9
+        valor: 1
+      Concurrency:
+        peso: 1
+        valor: 1001
+      Execution Time:
+        peso: 1
+        valor: 5
+      Memory:
+        peso: 9
+        valor: 1664
+      Requisicao free/mes:
+        peso: 1
+        valor: 1000000
+      Scalability:
+        peso: 1
+        valor: 1
+      funcoes max:
+        peso: 1
+        valor: 1001
+      tempo de computacao free:
+        peso: 1
+        valor: 400000

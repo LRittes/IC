@@ -1,0 +1,3 @@
+pyyamlPyYAML==6.0.1
+pyDecision==4.5.8
+seaborn==0.13.2

@@ -1,0 +1,19 @@
+Um empresário quer abrir uma nova loja de sports em um dos 3 locais diferentes:
+
+Um shopping center, o shopping center tem uma alta concentração de lojas e restaurantes variados. É uma área movimentada, com uma mistura de pessoas trabalhando e andando a volta. Lojas geralmente usam grandes telas e promoções para atrair clientes em potencial. Como a demanda por essas unidades de aluguel é baixa, o custo do aluguel é aceitavel.
+
+O centro da cidade, o centro da cidade é uma área movimentada, e um ponto de encontro de jovens e turistas. Atrações como shows de dança, palhaços e barracas de mercado, nas quais atraem varios visitantes. O centro da cidade tem muitas pequenas lojas localizadas no nivel terreo nas contruções historicas, nas quais sugerem um alto custo de aluguel. Essas lojas tem um alyo numero de clientes e são geralmente competitivos.
+
+Uma área nova de industria, A nova área de industria está nos suburbius da cidade, onde muitos negócios estão sendo recentemente preparados. Algumas construções estão sendo reservadospara pequenas lojas, mas no geral tem sido difícil atrair inquilinos, na qual quer dizer que o valor do aluguel são atualmente baixo. Clientes das lojas existentes na maioria trabalham na área e só alguns clientes vem de cidades vizinhas ou outras cidades para comprar aqui.
+
+Dado as descriçãp do problema, 4 critérios irão ser considerados para fazer a decisão final.
+
+Critério        Explicação
+Visibiliade     Probabilidade que uma pessoa randomica passe por e perceba a loja
+Competição      Nivel de competição na área
+Frequencia      Média de numero de clientes em loja similares na área
+Custo aluguel   Média do preço de aluguel por metro quadrado
+
+A tabela a cima mostra a hierarquia do caso de estudo. Ele tem 3 niveis, o minimo requerido para resolver o problema com AHP. Outros subcriterios poderiam ser adicionados, como por exemplo, o criterio de competição poderia ser dividido em 2 subcriterios: competição direta e indireta. Direta seria outras loja de esporte na área. Indireta seria outros tipos lojas que poderia distrair o potencial cliente.
+
+Cada critério de nivel baixo é priorizado de acordo com o critério de nivel superior logo acima.

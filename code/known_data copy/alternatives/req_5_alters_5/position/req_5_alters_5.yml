@@ -1,0 +1,156 @@
+alternatives:
+- company: company0
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 0
+    ConcurrencyPos: 1
+    Execution TimePos: 0
+    MemoryPos:
+    - 1664
+    - 1792
+    - 1920
+    - 2816
+    - 3072
+    - 3712
+    - 3968
+    - 4352
+    - 4480
+    - 5248
+    - 6144
+    - 6272
+    - 7040
+    - 7168
+    - 7936
+    - 8192
+    - 9344
+    - 9856
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 1
+    tempo de computacao freePos: 0
+- company: company1
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 1
+    ConcurrencyPos: 1
+    Execution TimePos: 0
+    MemoryPos:
+    - 1664
+    - 1920
+    - 2816
+    - 3072
+    - 3712
+    - 3968
+    - 4352
+    - 4480
+    - 5248
+    - 6144
+    - 6272
+    - 7040
+    - 7168
+    - 7936
+    - 8192
+    - 9344
+    - 9856
+    - 10112
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 1
+    tempo de computacao freePos: 0
+- company: company2
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 1
+    ConcurrencyPos: 1
+    Execution TimePos: 0
+    MemoryPos:
+    - 1792
+    - 1920
+    - 2816
+    - 3072
+    - 3712
+    - 3968
+    - 4352
+    - 4480
+    - 5248
+    - 6144
+    - 6272
+    - 7040
+    - 7168
+    - 7936
+    - 8192
+    - 9344
+    - 9856
+    - 10112
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 1
+    tempo de computacao freePos: 0
+- company: company3
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 1
+    ConcurrencyPos: 0
+    Execution TimePos: 1
+    MemoryPos:
+    - 1792
+    - 1920
+    - 2816
+    - 3072
+    - 3712
+    - 3968
+    - 4352
+    - 4480
+    - 5248
+    - 6144
+    - 6272
+    - 7040
+    - 7168
+    - 7936
+    - 8192
+    - 9344
+    - 9856
+    - 10112
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 1
+    tempo de computacao freePos: 0
+- company: company4
+  criterions:
+    1GB/segundo +Pos: 1
+    1M+ requisicaoPos: 0
+    Arredondamento da duracaoPos: 0
+    Cold StartsPos: 1
+    ConcurrencyPos: 0
+    Execution TimePos: 1
+    MemoryPos:
+    - 1792
+    - 1920
+    - 2816
+    - 3072
+    - 3712
+    - 3968
+    - 4352
+    - 4480
+    - 5248
+    - 6144
+    - 6272
+    - 7040
+    - 7168
+    - 7936
+    - 8192
+    - 9344
+    - 9856
+    - 10112
+    Requisicao free/mesPos: 0
+    ScalabilityPos: 0
+    funcoes maxPos: 1
+    tempo de computacao freePos: 0
