@@ -1,5 +1,5 @@
-NUM_TEST = 100
-NUM_ALTERNATIVES = [5,10,50,100,500,1000]
+NUM_TEST = 1
+NUM_ALTERNATIVES = [5]
 HB = 'HB'
 LB = 'LB'
 NB = 'NB'
@@ -32,7 +32,7 @@ DB = [
         {
             'pi': '1GB/segundo +',
             'tipo': 'LB',
-            'valores': [0.0000025,0.000016]
+            'valores': [2.5e-06,1.6e-05]
         },
         {
             'pi': 'Arredondamento da duracao',

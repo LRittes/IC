@@ -1,4 +1,5 @@
 import os
+
 from utils import *
 
 
@@ -12,92 +13,93 @@ from utils import *
 # saveKnownTestCase()
 # generateAlternatives(DB,alternativesKnownValue,0,1)
 
-if not os.path.exists('./data/requisitions.yml'):
-    generateSampleTest(DB, alternativesKnownValue)
+# if not os.path.exists('./data/requisitions.yml'):
+generateSampleTest(DB, alternativesKnownValue)
     
-    for idFull, crit in getAllRequisitions().items():
-        id, req = idFull[3:], crit['criterions']
-        for amount in NUM_ALTERNATIVES:
-            if int(id) < 7 and amount > 6:
-                continue
-            alters = getAlternatives(id,amount)
+for idFull, crit in getAllRequisitions().items():
+    id, req = idFull[3:], crit['criterions']
+    for amount in NUM_ALTERNATIVES:
+        # if int(id) < 7 and amount > 6:
+        #     continue
+        alters = getAlternatives(id,amount)
 
-            metrics  = runAHPTests(req,alters)
+        metrics  = runAHPTests(req,alters)
+        # print(alters)
 
-            saveMetrics(id,amount, metrics)
+        # saveMetrics(id,amount, metrics)
 
 
 
-# req = {
-#       '1M+ requisicao': {
-#         'peso': 9,
-#         'valor': 0.2
-#       },
-#       'Arredondamento da duracao':{
-#         'peso': 9,
-#         'valor': 1
-#       },
-#       'Cold Starts':{
-#         'peso': 9,
-#         'valor': 1
-#       },
-#       'Execution Time':{
-#         'peso': 9,
-#         'valor': 5
-#       },
-#       'Memory':{
-#         'peso': 1,
-#         'valor': 128
-#       }
-# }
+req = {
+      '1M+ requisicao': {
+        'peso': 9,
+        'valor': 0.2
+      },
+      'Arredondamento da duracao':{
+        'peso': 9,
+        'valor': 1
+      },
+      'Cold Starts':{
+        'peso': 9,
+        'valor': 1
+      },
+      'Execution Time':{
+        'peso': 9,
+        'valor': 5
+      },
+      'Memory':{
+        'peso': 1,
+        'valor': 128
+      }
+}
 
-# alternatives =[
-#     {'company':'company1',
-#          'criterions':{
-#             '1M+ requisicao':  0.2,
-#             'Arredondamento da duracao': 1,
-#             'Cold Starts': 1,
-#             'Execution Time': 5,
-#             'Memory': [128, 256, 384, 512, 640, 768]
-#              }
-#          },
-#     {'company':'company2',
-#          'criterions':{
-#             '1M+ requisicao':  0.2,
-#             'Arredondamento da duracao': 100,
-#             'Cold Starts': 1,
-#             'Execution Time': 5,
-#             'Memory': [128, 256, 384, 512, 640, 768]
-#              }
-#          },
-#     {'company':'company3',
-#          'criterions':{
-#             '1M+ requisicao':  0.4,
-#             'Arredondamento da duracao': 100,
-#             'Cold Starts': 1,
-#             'Execution Time': 5,
-#             'Memory': [128, 256, 384, 512, 640, 768]
-#              }
-#          },
-#     {'company':'company4',
-#          'criterions':{
-#             '1M+ requisicao':  0.4,
-#             'Arredondamento da duracao': 100,
-#             'Cold Starts': 1,
-#             'Execution Time': 9,
-#             'Memory': [128, 256, 384, 512, 640, 768]
-#              }
-#          },
-#     {'company':'company5',
-#          'criterions':{
-#             '1M+ requisicao':  0.4,
-#             'Arredondamento da duracao': 100,
-#             'Cold Starts': 2,
-#             'Execution Time': 9,
-#             'Memory': [128, 256, 384, 512, 640, 768]
-#              }
-#          },
-# ]
+alternatives =[
+    {'company':'company1',
+         'criterions':{
+            '1M+ requisicao':  0.2,
+            'Arredondamento da duracao': 1,
+            'Cold Starts': 1,
+            'Execution Time': 5,
+            'Memory': [128, 256, 384, 512, 640, 768]
+             }
+         },
+    {'company':'company2',
+         'criterions':{
+            '1M+ requisicao':  0.2,
+            'Arredondamento da duracao': 100,
+            'Cold Starts': 1,
+            'Execution Time': 5,
+            'Memory': [128, 256, 384, 512, 640, 768]
+             }
+         },
+    {'company':'company3',
+         'criterions':{
+            '1M+ requisicao':  0.4,
+            'Arredondamento da duracao': 100,
+            'Cold Starts': 1,
+            'Execution Time': 5,
+            'Memory': [128, 256, 384, 512, 640, 768]
+             }
+         },
+    {'company':'company4',
+         'criterions':{
+            '1M+ requisicao':  0.4,
+            'Arredondamento da duracao': 100,
+            'Cold Starts': 1,
+            'Execution Time': 9,
+            'Memory': [128, 256, 384, 512, 640, 768]
+             }
+         },
+    {'company':'company5',
+         'criterions':{
+            '1M+ requisicao':  0.4,
+            'Arredondamento da duracao': 100,
+            'Cold Starts': 2,
+            'Execution Time': 9,
+            'Memory': [128, 256, 384, 512, 640, 768]
+             }
+         },
+]
 
 # alternativesPos =[
 #     {'company':'company1',

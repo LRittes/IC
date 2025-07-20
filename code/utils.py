@@ -73,9 +73,9 @@ def getAlternatives(id, amount, knowData = False):
     dirPathReqAlters = f'{dirPath}req_{id}_alters_{amount}'
     fileNameAlters = f'req_{id}_alters_{amount}.yml'
     
-    with open(dirPathReqAlters + '/position/' + fileNameAlters, 'r') as file:
-        data = yaml.load(file,Loader=yaml.FullLoader)
-        position = data['alternatives']
+    # with open(dirPathReqAlters + '/position/' + fileNameAlters, 'r') as file:
+    #     data = yaml.load(file,Loader=yaml.FullLoader)
+    #     position = data['alternatives']
     
     with open(dirPathReqAlters + '/value/' + fileNameAlters, 'r') as file:
         data = yaml.load(file,Loader=yaml.FullLoader)
@@ -258,6 +258,7 @@ def saveMetrics(id, amount, metricsData: dict):
         yaml.dump(data ,file, default_flow_style=False, allow_unicode=True)
 
 def runAHPTests(req, alternatives):
+    # print(req, alternatives)
     ahpI = ahpImp.AHP(req, DB, alternatives['value'])
     
     startTimeI = time.time()
@@ -266,7 +267,7 @@ def runAHPTests(req, alternatives):
     timeI = endTimeI - startTimeI
     
     rankingAhpI.sort(key=ahpI.returnPtsFromList,reverse=True)
-    # ahpI.show_rank()
+    ahpI.show_rank()
     
     startTimeL = time.time()
     rankingAhpL = ahpLib.rankingAlternatives(req,DB,alternatives['position'])
@@ -275,7 +276,7 @@ def runAHPTests(req, alternatives):
     
     rankingAhpL.sort(key=ahpI.returnPtsFromList,reverse=True)
     
-    # print('-'*70)
+    print('-'*70)
     # ahpLib.showRanking(req,DB,alternatives['position'])
     # mse = mseRank(rankingAhpI,rankingAhpL)
     # print('-'*70)

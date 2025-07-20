@@ -1,0 +1,131 @@
+alternatives:
+  - company: company0
+    criterions:
+      1GB/segundo +: 2.5e-06
+      1M+ requisicao: 0.2
+      Arredondamento da duracao: 1
+      Cold Starts: 1
+      Concurrency: 1001
+      Execution Time: 30
+      Memory: [14080]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1001
+      tempo de computacao free: 400000
+  - company: company1
+    criterions:
+      1GB/segundo +: 2.5e-06
+      1M+ requisicao: 0.2
+      Arredondamento da duracao: 1
+      Cold Starts: 1
+      Concurrency: 1001
+      Execution Time: 30
+      Memory: [14080]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
+  - company: company2
+    criterions:
+      1GB/segundo +: 2.5e-06
+      1M+ requisicao: 0.2
+      Arredondamento da duracao: 1
+      Cold Starts: 1
+      Concurrency: 1001
+      Execution Time: 15
+      Memory: [14080]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
+  - company: company3
+    criterions:
+      1GB/segundo +: 2.5e-06
+      1M+ requisicao: 0.2
+      Arredondamento da duracao: 1
+      Cold Starts: 1
+      Concurrency: 1001
+      Execution Time: 15
+      Memory: [13952]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
+  - company: company4
+    criterions:
+      1GB/segundo +: 2.5e-06
+      1M+ requisicao: 0.4
+      Arredondamento da duracao: 1
+      Cold Starts: 1
+      Concurrency: 1001
+      Execution Time: 15
+      Memory: [13952]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
+  - company: company5
+    criterions:
+      1GB/segundo +: 2.5e-06
+      1M+ requisicao: 0.4
+      Arredondamento da duracao: 1
+      Cold Starts: 2
+      Concurrency: 1001
+      Execution Time: 15
+      Memory: [13952]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
+  - company: company6
+    criterions:
+      1GB/segundo +: 1.6e-05
+      1M+ requisicao: 0.4
+      Arredondamento da duracao: 1
+      Cold Starts: 2
+      Concurrency: 1001
+      Execution Time: 15
+      Memory: [13952]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
+  - company: company7
+    criterions:
+      1GB/segundo +: 1.6e-05
+      1M+ requisicao: 0.4
+      Arredondamento da duracao: 100
+      Cold Starts: 2
+      Concurrency: 1001
+      Execution Time: 15
+      Memory: [13952]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
+  - company: company8
+    criterions:
+      1GB/segundo +: 1.6e-05
+      1M+ requisicao: 0.4
+      Arredondamento da duracao: 100
+      Cold Starts: 2
+      Concurrency: 1000
+      Execution Time: 15
+      Memory: [13952]
+      Requisicao free/mes: 2000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
+  - company: company9
+    criterions:
+      1GB/segundo +: 1.6e-05
+      1M+ requisicao: 0.4
+      Arredondamento da duracao: 100
+      Cold Starts: 2
+      Concurrency: 1000
+      Execution Time: 15
+      Memory: [13952]
+      Requisicao free/mes: 1000000
+      Scalability: 1
+      funcoes max: 1000
+      tempo de computacao free: 400000
